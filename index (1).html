@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html class="no-js" lang="" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>One Web</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--Find out which purpose the script has.-->
+        <script src="https://kit.fontawesome.com/92335144a3.js" crossorigin="anonymous"></script>
+        <script src="table.js" crossorigin="anonymous"></script>
+    
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_SharedWithUsers msdt:dt="string">Krause, Alexander, Vodafone;F9013 Members</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_SharedWithUsers>
+<mso:SharedWithUsers msdt:dt="string">533;#Krause, Alexander, Vodafone;#540;#F9013 Members</mso:SharedWithUsers>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+    <body>
+      <header class="site-header">
+        <div class="site-identity">
+          <a href="#"><img src="https://i.ibb.co/bsXgf90/logo.png alt="ONO Dashboard" /></a>
+          <h1><a href="#">ONO Dashboard</a></h1>
+        </div>  
+        <nav class="site-navigation">
+          <ul class="nav">
+            <li><a href="#https://vfono.de/start" data-interception="off" target="_blank" rel="noopener noreferrer"><i class="fas fa-home"></i> Home</a></li> 
+            <li><a href="https://teams.microsoft.com/l/channel/19%3a11147738173149af808586b08db498b0%40thread.skype/Reklamation%2520Systeme?groupId=6bc5502e-e1a6-4dd9-a835-8a992ba480e9&tenantId=68283f3b-8487-4c86-adb3-a5228f18b893" data-interception="off" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Rekla Systeme</a></li> 
+            <li><a href="https://teams.microsoft.com/l/channel/19%3a96ceeb706bd7431b96f3c65f73a8c7a4%40thread.skype/ONOTogether?groupId=6bc5502e-e1a6-4dd9-a835-8a992ba480e9&tenantId=68283f3b-8487-4c86-adb3-a5228f18b893" data-interception="off" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> ONOtogether</a></li> 
+            <li><a href="Feedback.html" data-interception="off" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i>Feedback</a></li>
+          </ul>
+        </nav>
+      </header>
+
+
+      <div id="home"></div>
+        <div class="row">
+            <div class="leftcolumn">
+              <div>
+                Suche:
+                <input id="SearchField" tabindex="0">
+                <button id="SearchButton" oneclick="search()">Suchen</button>
+              </div>
+                <!-- Linkoverview -->
+                <h1 align="center">Shortlink Übersicht</h1>
+                <div align="center">Öffnen mit STRG + Linksklick | Suchen mit STRG+F</div><br>
+                <table id="link_table"> 
+                    <tr>
+                        <th>Ziel</th>
+                        <th>Short</th>
+                        <!-- <th>Link</th> -->
+                        <th></th>
+                    </tr>
+                    <!-- Shortlist -->
+                    <tr>
+                        <td>Dashboard ONO (diese Seite)</td>               
+                        <td class="shortFett"><a href="https://vfono.de/start" target="_blank" rel="noopener noreferrer"> vfono.de/start</td>
+                        <td></td>
+                    </tr>
+                    <!-- Abo kündigen-->
+                    <tr>
+                      <td>Abo kündigen</td>               
+                      <td class="shortFett"><a href="https://vfono.de/abo" target="_blank" rel="noopener noreferrer"> vfono.de/abo</td>
+                      <td class="shortFettNeu">NEU</td>
+                  </tr>
+                    <!-- ASK -->
+                  <tr>
+                      <td>ASK Vodafone</td>               
+                      <td class="shortFett"><a href="https://vfono.de/ask" target="_blank" rel="noopener noreferrer"> vfono.de/ask</td>
+                      <!-- <td><a href="https://askvodafone.wf-de.vodafone.com/" target="_blank" rel="noopener noreferrer">https://askvodafone.wf-de.vodafone.com/</td> -->
+                      <td></td>
+                  </tr>
+                    <!-- Employee Benefits -->
+                  <tr>
+                      <td>Employee Benefits</td>               
+                      <td class="shortFett"><a href="https://vfono.de/company" target="_blank" rel="noopener noreferrer"> vfono.de/company</td>
+                      <!-- <td><a href="https://askvodafone.wf-de.vodafone.com/" target="_blank" rel="noopener noreferrer">https://askvodafone.wf-de.vodafone.com/</td> -->
+                      <td></td>
+                  </tr>
+                    <!-- COPS -->
+                  <tr>
+                      <td>COPS Desktop Agent</td>               
+                      <td class="shortFett"><a href="https://vfono.de/cops" target="_blank" rel="noopener noreferrer"> vfono.de/cops</td>
+                      <td></td>
+                  </tr>
+                    <!-- csp -->
+                    <tr>
+                      <td>Customer Service Portal</td>               
+                      <td class="shortFett"><a href="https://vfono.de/csp" target="_blank" rel="noopener noreferrer"> vfono.de/csp</td>
+                        <td></td>
+                    </tr>
+                    <!-- DES -->
+                    <tr>
+                      <td>DES 2.0</td>               
+                      <td class="shortFett"><a href="https://vfono.de/des" target="_blank" rel="noopener noreferrer"> vfono.de/des</td>
+                        <td></td>
+                    </tr>
+                    <!-- dsl-shop -->
+                    <tr>
+                      <td>Business DSL Shop</td>               
+                      <td class="shortFett"><a href="https://vfono.de/dsl-shop" target="_blank" rel="noopener noreferrer"> vfono.de/dsl-shop</td>
+                        <td></td>
+                    </tr>
+                    <!-- Elsbeth OneClick-->
+                    <tr>
+                      <td>Elsbeth OneClick</td>               
+                      <td class="shortFett"><a href="https://vfono.de/elsbeth" target="_blank" rel="noopener noreferrer"> vfono.de/elsbeth</td>
+                      <td class="shortFettNeu">NEU</td>
+                  </tr>
+                    <!-- ESS -->
+                    <tr>
+                        <td>ESS</td>               
+                        <td class="shortFett"><a href="https://vfono.de/ess" target="_blank" rel="noopener noreferrer"> vfono.de/ess</td>
+                          <td></td>
+                    </tr>
+                    <!-- EVO-->
+                    <tr>
+                      <td>EVO</td>               
+                      <td class="shortFett"><a href="https://vfono.de/evo" target="_blank" rel="noopener noreferrer"> vfono.de/evo</td>
+                      <td></td>
+                  </tr>
+                    <!-- Hardware -->
+                    <tr>
+                    <td>Hardware</td>               
+                    <td class="shortFett"><a href="https://vfono.de/hardware" target="_blank" rel="noopener noreferrer"> vfono.de/hardware</td>
+                      <td></td>
+                </tr>
+                    <!-- ISC -->
+                    <tr>
+                        <td>Sales Audit</td>               
+                        <td class="shortFett"><a href="https://vfono.de/isc" target="_blank" rel="noopener noreferrer"> vfono.de/isc</td>
+                          <td></td>
+                    </tr>
+                    <!-- KATAG -->
+                    <tr>
+                        <td>Filialkleidung</td>               
+                        <td class="shortFett"><a href="https://vfono.de/katag" target="_blank" rel="noopener noreferrer"> vfono.de/katag</td>
+                          <td></td>
+                    </tr>
+                    <!-- KBA -->
+                    <tr>
+                        <td>KBA</td>               
+                        <td class="shortFett"><a href="https://vfono.de/kba" target="_blank" rel="noopener noreferrer"> vfono.de/kba</td>
+                          <td></td>
+                    </tr>
+                    <!-- KDG -->
+                    <tr>
+                    <td>Kabel DE Tool</td>               
+                    <td class="shortFett"><a href="https://vfono.de/kdg" target="_blank" rel="noopener noreferrer"> vfono.de/kdg</td>
+                      <td></td>
+                </tr>
+                    <!-- KIAS -->
+                    <tr>
+                        <td>KIAS</td>               
+                        <td class="shortFett"><a href="https://vfono.de/kias" target="_blank" rel="noopener noreferrer"> vfono.de/kias</td>
+                          <td></td>
+                    </tr>
+                    <!-- KITT -->
+                    <tr>
+                        <td>KITT</td>               
+                        <td class="shortFett"><a href="https://vfono.de/kitt" target="_blank" rel="noopener noreferrer"> vfono.de/kitt</td>
+                          <td></td>
+                    </tr>
+                    <!-- LANDING -->
+                    <tr>
+                        <td>Landing Page</td>               
+                        <td class="shortFett"><a href="https://vfono.de/landing" target="_blank" rel="noopener noreferrer"> vfono.de/landing</td>
+                        <td></td>
+                    </tr>
+                    <!-- Lesato -->
+                    <tr>
+                      <td>Lesato</td>               
+                      <td class="shortFett"><a href="https://vfono.de/lesato" target="_blank" rel="noopener noreferrer"> vfono.de/lesato</td>
+                      <td></td>
+                  </tr>
+                    <!-- Liefersituation -->
+                    <tr>
+                      <td>Liefersituation </td>               
+                      <td class="shortFett"><a href="https://vfono.de/liefersituation" target="_blank"> vfono.de/liefersituation</td>
+                        <td></td>
+                    </tr>
+                    <!-- Mission Vodafone-->
+                    <tr>
+                      <td>Mission Vodafone</td>               
+                      <td class="shortFett"><a href="https://vfono.de/mission" target="_blank" rel="noopener noreferrer"> vfono.de/mission</td>
+                      <td></td>
+                  </tr>
+                    <!-- MYIT -->
+                    <tr>
+                        <td>MyIT Shop</td>               
+                        <td class="shortFett"><a href="https://vfono.de/myit" target="_blank" rel="noopener noreferrer"> vfono.de/myit</td>
+                          <td></td>
+                    </tr>
+                    <!-- ngum -->
+                    <tr>
+                      <td>nGUM</td>               
+                      <td class="shortFett"><a href="https://vfono.de/ngum" target="_blank" rel="noopener noreferrer"> vfono.de/ngum</td>
+                      <td></td>
+                    </tr>
+                    <!-- Outlook Online -->
+                    <tr>
+                      <td>Outlook</td>               
+                      <td class="shortFett"><a href="https://vfono.de/outlook" target="_blank" rel="noopener noreferrer"> vfono.de/outlook</td>
+                      <td></td>
+                  </tr>
+                  <!-- Preisliste -->
+                  <tr>
+                    <td>Preisliste</td>               
+                    <td class="shortFett"><a href="https://vfono.de/preise" target="_blank" rel="noopener noreferrer"> vfono.de/preise</td>
+                    <td></td>
+                  </tr>
+                  <!-- Promotions -->
+                  <tr>
+                    <td>Promotions</td>               
+                    <td class="shortFett"><a href="https://vfono.de/promo" target="_blank" rel="noopener noreferrer"> vfono.de/promo</td>
+                    <td></td>
+                  </tr>
+                    <!-- OSF Retail -->
+                    <tr>
+                      <td>OSF Retail</td>               
+                      <td class="shortFett"><a href="https://vfono.de/osf-rt" target="_blank" rel="noopener noreferrer"> vfono.de/osf-rt</td>
+                        <td></td>
+                    </tr>
+                    <!-- OSF Telesales -->
+                    <tr>
+                      <td>OSF Telesales</td>               
+                      <td class="shortFett"><a href="https://vfono.de/osf-ts" target="_blank" rel="noopener noreferrer"> vfono.de/osf-ts</td>
+                        <td></td>
+                    </tr>
+                    <!-- Quinyx -->
+                    <tr>
+                      <td>Quinyx</td>               
+                      <td class="shortFett"><a href="https://vfono.de/quinyx" target="_blank" rel="noopener noreferrer"> vfono.de/quinyx</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                      <td>Quinyx FAQ</td>               
+                      <td class="shortFett"><a href="https://vfono.de/quinyx-faq" target="_blank" rel="noopener noreferrer"> vfono.de/quinyx-faq</td>
+                      <td class="shortFettNeu">NEU</td>
+                  </tr>
+                    <!-- Retailmanager -->
+                    <tr>
+                      <td>Retailmanager</td>               
+                      <td class="shortFett"><a href="https://vfono.de/rm" target="_blank" rel="noopener noreferrer"> vfono.de/rm</td>
+                      <td></td>
+                    </tr>
+                    <!-- Salesworld -->
+                    <tr>
+                      <td>Salesworld</td>               
+                      <td class="shortFett"><a href="https://vfono.de/salesworld" target="_blank" rel="noopener noreferrer"> vfono.de/salesworld</td>
+                        <td></td>
+                    </tr>
+                    <!-- SAP -->
+                    <tr>
+                      <td>SAP</td>               
+                      <td class="shortFett"><a href="https://vfono.de/sap" target="_blank" rel="noopener noreferrer"> vfono.de/sap</td>
+                        <td></td>
+                    </tr>
+                    <!-- SOHO Listenpreis -->
+                    <tr>
+                        <td>SOHO Listenpreise</td>               
+                        <td class="shortFett"><a href="https://vfono.de/soho-lp" target="_blank" rel="noopener noreferrer"> vfono.de/soho-lp</td>
+                          <td></td>
+                    </tr>
+                    <!-- Versand-Tool -->
+                    <tr>
+                      <td>Infodoks versenden</td>               
+                      <td class="shortFett"><a href="https://vfono.de/versand-tool" target="_blank" rel="noopener noreferrer"> vfono.de/versand-tool</td>
+                        <td></td>
+                    </tr>
+                    <!-- Spice-->
+                    <tr>
+                      <td>Spice Unitymedia</td>               
+                      <td class="shortFett"><a href="https://vfono.de/spice" target="_blank" rel="noopener noreferrer"> vfono.de/spice</td>
+                        <td></td>
+                  </tr>
+                    <!-- Sales Service Center -->
+                    <tr>
+                      <td>Sales Service Center</td>               
+                      <td class="shortFett"><a href="https://vfono.de/ssc" target="_blank" rel="noopener noreferrer"> vfono.de/ssc</td>
+                        <td></td>
+                  </tr>
+                    <!-- Speedtest Plus-->
+                    <tr>
+                      <td>Speedtest Plus</td>               
+                      <td class="shortFett"><a href="https://vfono.de/stp" target="_blank" rel="noopener noreferrer"> vfono.de/stp</td>
+                      <td></td>
+                  </tr>
+                    <!-- Tauschrausch-->
+                    <tr>
+                      <td>Tauschrausch</td>               
+                      <td class="shortFett"><a href="https://vfono.de/tauschrausch" target="_blank" rel="noopener noreferrer"> vfono.de/tauschrausch</td>
+                      <td></td>
+                  </tr>
+                    <!-- SSO-->
+                    <tr>
+                      <td>SSO Landingpage</td>               
+                      <td class="shortFett"><a href="https://vfono.de/sso" target="_blank" rel="noopener noreferrer"> vfono.de/sso</td>
+                        <td></td>
+                  </tr>
+                    <!-- UCT-->
+                    <tr>
+                      <td>UCT</td>               
+                      <td class="shortFett"><a href="https://vfono.de/uct" target="_blank" rel="noopener noreferrer"> vfono.de/uct</td>
+                        <td></td>
+                  </tr>
+                    <!-- University-->
+                    <tr>
+                      <td>University</td>               
+                      <td class="shortFett"><a href="https://vfono.de/uni" target="_blank" rel="noopener noreferrer"> vfono.de/uni</td>
+                      <td></td>
+                  </tr>
+                    <!-- Wunschrufnummer-->
+                    <tr>
+                      <td>Wunschrufnummerntool</td>               
+                      <td class="shortFett"><a href="https://vfono.de/wrn" target="_blank" rel="noopener noreferrer"> vfono.de/wrn</td>
+                      <td></td>
+                  </tr>
+                </table>
+
+                <table id="miro_table">
+                  <tr>
+                    <th>Miro Boards</th>
+                    <th>Link</th>
+                    <th></th>
+                  </tr>
+                  <tr>
+                    <td>Sales Audit</td>               
+                    <td class="shortFett"><a href="https://vfono.de/miro-audit" target="_blank" rel="noopener noreferrer">vfono.de/miro-audit</td>
+                      <td></td>
+                  </tr>     
+                  <tr>
+                    <td>Regioboard Frank</td>               
+                    <td class="shortFett"><a href="https://vfono.de/miro-frank" target="_blank" rel="noopener noreferrer">vfono.de/miro-frank</td>
+                    <td> </td>
+                  </tr>
+                  <tr>
+                    <td>Regioboard Hendrik</td>               
+                    <td class="shortFett"><a href="https://vfono.de/miro-hendrik" target="_blank" rel="noopener noreferrer">vfono.de/miro-hendrik</td>
+                    <td> </td>
+                  </tr>
+                  <tr>
+                    <td>Regioboard Nicole</td>               
+                    <td class="shortFett"><a href="https://vfono.de/miro-nicole" target="_blank" rel="noopener noreferrer">vfono.de/miro-nicole</td>
+                    <td> </td>
+                  </tr>
+                  <tr>
+                    <td>Regioboard Joanna</td>               
+                    <td class="shortFett"><a href="https://vfono.de/miro-joanna" target="_blank" rel="noopener noreferrer">vfono.de/miro-joanna</td>
+                    <td> </td>
+                    </tr>
+                  <tr>
+                    <td>Regioboard Ebru</td>               
+                    <td class="shortFett"><a href="https://vfono.de/miro-ebru" target="_blank" rel="noopener noreferrer">vfono.de/miro-ebru</td>
+                    <td> </td>
+                  </tr>  
+                  <tr>
+                    <td>Regioboard Philipp</td>               
+                    <td class="shortFett"><a href="https://vfono.de/miro-philipp" target="_blank" rel="noopener noreferrer">vfono.de/miro-philipp</td>
+                    <td> </td>
+                  </tr>
+                  <tr>
+                    <td>ONOtogether</td>               
+                    <td class="shortFett"><a href="https://vfono.de/miro-o2g" target="_blank" rel="noopener noreferrer">vfono.de/miro-o2g</td>
+                    <td> </td>
+                  </tr>
+                  <tr>
+                    <td>Always hONOr</td>               
+                    <td class="shortFett"><a href="https://vfono.de/miro-honor" target="_blank" rel="noopener noreferrer">vfono.de/miro-honor</td>
+                    <td> </td>
+                  </tr>
+                  <tr>
+                    <td>Team Leipzig LGS</td>               
+                    <td class="shortFett"><a href="https://vfono.de/miro-lgs" target="_blank" rel="noopener noreferrer">vfono.de/miro-lgs</td>
+                    <td> </td>
+                    </tr>
+                  <tr>
+                    <td>Team Radebeul</td>               
+                    <td class="shortFett"><a href="https://vfono.de/miro-rdb" target="_blank" rel="noopener noreferrer">vfono.de/miro-rdb</td>
+                    <td> </td>
+                  </tr> 
+                  <tr>
+                    <td>Team Potsdam</td>               
+                    <td class="shortFett"><a href="https://vfono.de/miro-p" target="_blank" rel="noopener noreferrer">vfono.de/miro-p</td>
+                    <td> </td>
+                  </tr> 
+                  <tr>
+                    <td>Azubis Ost</td>               
+                    <td class="shortFett"><a href="https://vfono.de/miro-ao" target="_blank" rel="noopener noreferrer">vfono.de/miro-ao</td>
+                    <td> </td>
+                  </tr>
+                  <tr>
+                    <td>Azubis Nord-Ost</td>               
+                    <td class="shortFett"><a href="https://vfono.de/miro-ano" target="_blank" rel="noopener noreferrer"> vfono.de/miro-ano</td>
+                    <td> </td>
+                  </tr>
+                </table>
+            </div>
+
+
+            <!-- AKTUELLE NEWS IM BLOGFORMAT -->
+            <!--By making the website more responsive, the webside should include a input mask to 
+            add new events and informations without changing the actual html file by hand. -->
+
+            
+              <div class="rightcolumn">
+                <div class="card">
+                  <div class="img_pod">
+                    <img src="https://img.icons8.com/external-flat-juicy-fish/60/000000/external-review-customer-feedback-flat-flat-juicy-fish.png"/>                  </div>
+                   <h1>Aktuelle Incentives</h1>
+                   <h3 style="color: #ff5e62;">XIAOMI Incentive</h3>
+                   <ul class="symbols">
+                    <li><b>Zeitraum</b><br>01.03.2022 - 31.03.2022</li>
+                    <li>
+                      <b>Einstiegsschwelle</b>
+                      <br>100 % Festnetz laut Rennliste<br>
+                      80 % Credit Mobile laut Rennliste <br>
+                      Xiaomi-Abverkaufssoll
+                    </li>
+                    <li>
+                      <b>Staffelung</b>
+                      <br>Staffel 1: 1x Mi Ionic Dryer pro Filiale<br>
+                      Staffel 2: 1x Air Fryer pro Filiale<br>
+                      Staffel 3: 1x Mi Scooter pro Filiale (max. 5 für ONO)
+                    </li>
+                    <li>
+                      <b>Gewinner</b>
+                      <br>alle Filialen können gewinnen. Die Gewinne werden per Losverfahren durch den Store Manager verteilt.
+                    </li>                    
+                    <!-- <li><a href="https://www.menti.com/bct5jpavzq" target="_blank" rel="noopener noreferrer">Eure Fragen vorab über Mentimeter</a></li>
+                    <li><a href="https://teams.microsoft.com/l/meetup-join/19%3a96ceeb706bd7431b96f3c65f73a8c7a4%40thread.skype/1641373426081?context=%7b%22Tid%22%3a%2268283f3b-8487-4c86-adb3-a5228f18b893%22%2c%22Oid%22%3a%2237ebf042-ac3b-4919-8d5b-6d1f176410f9%22%7d" target="_blank" rel="noopener noreferrer">Teilnehmen</a></li>-->
+                    </ul>  
+                </div>
+
+
+
+                <div class="card">
+                  <div class="img_pod">
+                    <img src="https://img.icons8.com/color/48/000000/planner.png"/>                                      
+                  </div>
+                   <h1>Anstehende Termine</h1>
+                   <h3 style="color: #ff5e62;">ONOtogether Talk für alle Mitarbeiter</h3>
+                   <ul class="symbols">
+                    <li>3. März 2022 08:30 - 09:15</li>
+                    <!-- <li><a href="https://www.menti.com/bct5jpavzq" target="_blank" rel="noopener noreferrer">Eure Fragen vorab über Mentimeter</a></li>
+                    <li><a href="https://teams.microsoft.com/l/meetup-join/19%3a96ceeb706bd7431b96f3c65f73a8c7a4%40thread.skype/1641373426081?context=%7b%22Tid%22%3a%2268283f3b-8487-4c86-adb3-a5228f18b893%22%2c%22Oid%22%3a%2237ebf042-ac3b-4919-8d5b-6d1f176410f9%22%7d" target="_blank" rel="noopener noreferrer">Teilnehmen</a></li>-->
+                    </ul>  
+                    <hr class="new1">
+                    <h3 style="color: #ff5e62;">ONO-Strategiemeeting 2022</h3>
+                    Gemeinsam werden wir unsere Ideen und ToDos zu einem strategischen Motor für das Geschäftsjahr 2022/ 2023 zusammenbauen.
+                    <ul class="symbols">
+                     <li>30. März 2022 10:00 - 31. März 2022 15:00</li>
+                      <li>Ort wird noch bekannt gegeben</li>
+                    </ul> 
+                     <hr class="new1">
+                     <h3 style="color: #ff5e62;">Training: Exit Game</h3>
+                     Eure Sales Coaches laden Euch herzlich zu einem neuen Traingsformat ein. In diesem möchten wir Euch das Thema Breitband auf spielerische Weise noch näher bringen!
+                     <ul class="symbols">
+                      <li><b>Zeitraum</b><br>Ost: ab 07.03 | Nord-Ost: ab 14.03</li>
+                      <li><b>Zielgruppe</b><br>Studierende | Auszubildende | (Senior) Sales Agent | Jeder ist willkommen!</li>
+                      <li><b>Anmeldung</b><br>Anmeldung über Eure Store Manager</li>                  
+                    </ul>  
+                </div>
+              
+                  
+
+                  <!-- Arbeitssicherheut eLearning
+                  <div id="news"></div>
+                  <div class="card">
+                    <div class="img_pod">
+                      <img src="https://img.icons8.com/cute-clipart/64/000000/machine-learning.png"/>
+                    </div>
+                    <h1 style="text-align: left;">eLearnings zur Arbeitssicherheit</h1>
+                    <h5 style="text-align: left;">erledigen bis zum 24.01.2022</h5>
+                    
+                    <div class="linkCard">
+                    <a href="https://vfono.de/trainings2022" data-interception="off" target="_blank" rel="noopener noreferrer">Dokumentiere hier die Erledigung Deiner e-Learnings </a>
+                  </div>
+
+                    <p><h3>Betrifft alle:</h3></p>
+                    <ul class="symbols">
+                      <li>
+                          <a href="https://vodafone.sharepoint.com/sites/learning/germany/Seiten/ArbeitssicherheitM1Buro100008337.aspx#/" target="_blank" rel="noopener noreferrer"> Arbeitssicherheit M1 - Büro </a>
+                      </li>
+                      <br>
+                      <li><td class="shortFett">
+                          <a href="https://vodafone.sharepoint.com/sites/learning/germany/Seiten/GigaProtectStartedurchmitDatenschutz6287181.aspx#/" target="_blank" rel="noopener noreferrer">Giga-Protect: Starte durch mit Datenschutz</a>
+                      </td></li>
+                      <br>
+                      <li><td class="shortFett">
+                          <a href="https://vodafone.sharepoint.com/sites/learning/germany/Seiten/DWR20Verhaltenskodex3636013.aspx#/" target="_blank" rel="noopener noreferrer"> DWR 2.0 Verhaltens-Kodex </a>
+                      </td></li>
+                      <br>
+                      <li><td class="shortFett">
+                          <a href="https://vodafone.sharepoint.com/sites/learning/germany/Seiten/DWR20AntiKorruption3636012.aspx#/" target="_blank" rel="noopener noreferrer"> DWR 2.0 Anti-Korruption</a>
+                      </td></li>
+                      <br>
+                      <li><td class="shortFett">
+                          <a href="https://vodafone.sharepoint.com/sites/learning/germany/Seiten/DWR20GrundlagenzumDatenschutz3637001.aspx#/" target="_blank" rel="noopener noreferrer"> DWR 2.0 Grundlagen zum Datenschutz</a>
+                      </td></li>
+                      <br>
+                      <li><td class="shortFett">
+                          <a href="https://vodafone.sharepoint.com/sites/learning/germany/Seiten/DWR20WiemanbeiVodafonesicherarbeitet3637002.aspx#/" target="_blank" rel="noopener noreferrer"> DWR 2.0 Wie man bei Vodafone sicher arbeitet</a>
+                      </td></li>
+                      <br>
+                      <li><td class="shortFett">
+                          <a href="https://vodafone.sharepoint.com/sites/learning/germany/Seiten/ArbeitssicherheitM2SicherunterwegsbeiVodafone100079037.aspx#/" target="_blank" rel="noopener noreferrer">Arbeitssicherheit M2 Sicher unterwegs bei Vodafone</a>
+                      </td></li>
+                      <br>
+                      <li><td class="shortFett">
+                          <a href="https://vodafone.sharepoint.com/sites/learning/germany/Seiten/ArbeitssicherheitM7FilialvertriebV2100010564.aspx#/" target="_blank" rel="noopener noreferrer"> Arbeitssicherheit M7 Filialvertrieb</a>
+                      </td></li>
+                    </ul>
+                    <br>
+
+                    <p><h3>Betrifft nicht alle:</h3></p>
+                    <ul class="symbols">
+                      <li>
+                        <td class="shortFett">
+                          <a href="https://vodafone.sharepoint.com/sites/learning/germany/Seiten/ArbeitssicherheitM0FuhrungsaufgabeArbeitssicherheit100010550.aspx#/" target="_blank" rel="noopener noreferrer"> Arbeitssicherheit M0 - Führungsaufgabe: Arbeitssicherheit</a>
+                      </td></li>
+                      <br>
+                      <li><td class="shortFett">
+                          <a href="https://vodafone.sharepoint.com/sites/learning/germany/Seiten/ArbeitssicherheitM8RaumungsbeauftragteV2100010559.aspx#/" target="_blank" rel="noopener noreferrer"> Arbeitssicherheit M8 - Räumungsbeauftragte V2</a>
+                      </td></li>
+                    </ul>
+                      
+                  </div>
+                   -->
+              </div> 
+        </div>
+        <br><br><br>
+        <hr>
+        <div class="footer">
+          <h4>Vodafone Niederlassung ONO 2022</h4>
+          <br>
+            <h4>Tommy Max Kretzschbold™</h4>
+        </div>
+    </body>
+</html>
